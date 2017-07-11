@@ -49,7 +49,7 @@ namespace OOPIntro
             // this is my default constructor
         }
 
-        public Dog(string hairLength, decimal height, int runningSpeed, double weight) // hairLenght is the temporary variable/parameter; it equals what this.hairLength equals below
+        public Dog(string hairLength, decimal height, int runningSpeed, double weight) // hairLength is the temporary variable/parameter; it equals what this.hairLength equals below
         {
             this.hairLength = hairLength; // in this.hairLenght, hairLength is the private field above
             this.height = height;

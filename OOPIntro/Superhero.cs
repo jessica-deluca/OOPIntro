@@ -68,7 +68,28 @@ namespace OOPIntro
             this.hasCape = hasCape;
         }
 
-        // 2 methods
+        // 3 methods
+        
+        public void BattleNemesis() // everytime i call this method, object's strength level will go down 10 and object will lose the cape
+        {
+            this.StrengthLevel -= 10; // subtracts 10
+            this.HasCape = false;
+            this.Costume = "tattered";
+        }
+
+        public void GetHealthy(string costume, int strengthLevel) // costume and strength level will go back to original state
+        {
+            this.Costume = costume;
+            this.StrengthLevel = strengthLevel;
+        }
+
+        public void AllyGained()
+        {
+            this.StrengthLevel += 10; // adds 10
+            this.HasCape = true;
+            Console.WriteLine("Thank you for being a friend.");
+        }
+
 
     }
 }
