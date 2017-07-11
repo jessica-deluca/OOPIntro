@@ -17,17 +17,22 @@ namespace OOPIntro
 
         // fields - variables that belong to a class
 
-        private string name; // this is a field
+        private string name; // this is a field (use Camelcase)
         private int age;
         private string furColor;
         private bool isHungry = true;
 
         // properties - mix between a field and a method that allow controlled access
-        public string Name
+        public string Name // this is a property that accesses private field above
             {
-                get {return this.name; }
+                get { return this.name; } // user can get and set name (i.e. firstCat.Name = "Mittens";)
                 set { this.name = value; }
             }
+
+        public int Age
+        {
+            get { return this.age; } // user can only get age (i.e. Console.WriteLine(firstCat.Age);)
+        }
 
         // we also have behaviors:
         // methods - repeatable/reusable sections of code; actions
@@ -35,6 +40,8 @@ namespace OOPIntro
         //              - allow us to control the state of an object
         //              - allow us to perform any actions the object might need upon creation
         //              - always share the name of the class
+        //              - can have as many constructors as you need as long as they each have an unique signature
+        //              - signature means the parameters in the parentheses after the constructor name; order & data types matter
 
         public Cat() // this is a default constructor - it takes no arguments or parameters
         {
@@ -47,6 +54,8 @@ namespace OOPIntro
             this.age = age;
             this.furColor = furColor;
         }
+
+        // publc Cat() is overloading - same name but different parameters
 
         public void Eat()
         {
