@@ -43,7 +43,7 @@ namespace OOPIntro
         //              - can have as many constructors as you need as long as they each have an unique signature
         //              - signature means the parameters in the parentheses after the constructor name; order & data types matter
 
-        public Cat() // this is a default constructor - it takes no arguments or parameters
+        public Cat() // this is a default constructor - it takes no arguments or parameters; if there will be more than one constructor, you have to have a default constructor
         {
 
         }
