@@ -42,6 +42,8 @@ namespace OOPIntro
         //              - always share the name of the class
         //              - can have as many constructors as you need as long as they each have an unique signature
         //              - signature means the parameters in the parentheses after the constructor name; order & data types matter
+        
+        // constructors are used when we are going to create new objects (no static in the header); methods are used for repeated code
 
         public Cat() // this is a default constructor - it takes no arguments or parameters; if there will be more than one constructor, you have to have a default constructor
         {

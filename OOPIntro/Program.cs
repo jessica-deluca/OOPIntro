@@ -10,6 +10,12 @@ namespace OOPIntro
     {
         static void Main(string[] args)
         {
+            Villains boxGhost = new Villains();
+            Villains badGuy2 = new Villains("Ehhh", "Street Clothes", 75);
+            badGuy2.EvilPowers = badGuy2.GetPowers();
+            Console.WriteLine(badGuy2.EvilPowers);
+            // Console.WriteLine(badGuy2.GetPowers()); // CW tab twice shortcut
+
             // when we initialize a new object, it is called instantiating (creating an new instance)
             // objects need to be instantiated before they can be used
             // all objects of a specific type are created from the same template - CLASS
@@ -65,7 +71,7 @@ namespace OOPIntro
 
             // create three different superheros
 
-            Superhero firstHero = new Superhero(); // instantiating first object; using default constructor
+            //Superhero firstHero = new Superhero(); // instantiating first object; using default constructor
             //firstHero.StrengthLevel = 100;
             //firstHero.HasCape = true;
 
@@ -83,16 +89,16 @@ namespace OOPIntro
             //secondHero.AllyGained(); // uses a method; adds 10 to strength level and says "Thank you for being a friend."
             //Console.WriteLine(secondHero.StrengthLevel);
 
-            Superhero thirdHero = new Superhero("black Kevlar body armor", "The Best Ever", 1000, "Being the best", false);
+            //Superhero thirdHero = new Superhero("black Kevlar body armor", "The Best Ever", 1000, "Being the best", false);
 
-            thirdHero.BattleNemesis();
-            Console.WriteLine("Oh no! Now my costume is " + thirdHero.Costume);
-            Console.WriteLine("And my strength has diminished to " + thirdHero.StrengthLevel);
+            //thirdHero.BattleNemesis();
+            //Console.WriteLine("Oh no! Now my costume is " + thirdHero.Costume);
+            //Console.WriteLine("And my strength has diminished to " + thirdHero.StrengthLevel);
 
             // Classes & Objects
             // - have states: fields & properties
             // - have behaviors: methods & constructors
-        
+
         }
     }
 }
