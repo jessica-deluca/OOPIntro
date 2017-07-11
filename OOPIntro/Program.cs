@@ -17,7 +17,16 @@ namespace OOPIntro
 
             // the format we use to instantiate an object looks like this:
             // ClassName objectName = new ClassName();
-            Cat mittens = new Cat(); // to create a new object, we use a special method called a constructor; Cat() is calling the constructor in our main method
+
+            Cat firstCat = new Cat(); // to create a new object, we use a special method called a constructor; Cat() is calling the constructor in our main method
+
+            firstCat.Name = "Mittens";
+
+            Cat secondCat = new Cat("Oz", 3, "Orange and white");
+            secondCat.Name = "Ozzy";
+            Console.WriteLine(secondCat.Name);
+            Console.WriteLine(secondCat.Age);
+            secondCat.Eat();
 
             // thinking about objects in real life, create 3 examples of objects
             // objects should have 5 states (characteristics) and 5 behaviors
